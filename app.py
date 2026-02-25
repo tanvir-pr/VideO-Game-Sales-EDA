@@ -3,8 +3,9 @@ import pandas as pd
 import pickle
 import numpy as np
 
+
 with open("pipeline.pkl","rb") as file:
- pipeline = pickle.load(file)
+  pipeline = pickle.load(file)
 
 
 def predict_sales(na, eu, jp, other, year):
